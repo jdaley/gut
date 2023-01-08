@@ -1,0 +1,17 @@
+{
+  "name": "gut-gk7",
+  "version": "0.0.1",
+  "description": "GUT GK7 library",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdaley/gut.git",
+    "directory": "gut-gk7"
+  },
+  "author": "jdaley",
+  "license": "Apache-2.0",
+  "homepage": "https://jdaley.github.io/gut"
+}

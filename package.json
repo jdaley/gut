@@ -1,0 +1,18 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "description": "GUT workspace root",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jdaley",
+  "license": "Apache-2.0",
+  "private": true,
+  "workspaces": [
+    "gut-gk7",
+    "mitreapp"
+  ],
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
