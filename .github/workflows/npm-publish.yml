@@ -13,11 +13,17 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
+      - run: |
+          npm ci
+          npm run build
+          npm publish
         working-directory: gut-gk7
-      - run: npm run build
-        working-directory: gut-gk7
-      - run: npm publish
-        working-directory: gut-gk7
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - run: |
+          npm ci
+          npm run build
+          npm publish
+        working-directory: mitreapp
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
