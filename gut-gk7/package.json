@@ -4,8 +4,7 @@
   "description": "GUT GK7 library",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc -b",
-    "ci": "tsc -b"
+    "build": "tsc -b"
   },
   "repository": {
     "type": "git",
