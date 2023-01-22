@@ -24,7 +24,7 @@ jobs:
           npm ci
           npm run build
           npm publish
-          npx pkg .\lib\index.js
+          npx pkg ./lib/index.js
         working-directory: mitreapp
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

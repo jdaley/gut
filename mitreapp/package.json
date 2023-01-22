@@ -1,6 +1,6 @@
 {
   "name": "mitreapp",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ZAAQ-HTTP gateway",
   "main": "lib/index.js",
   "scripts": {
@@ -15,6 +15,6 @@
   "license": "Apache-2.0",
   "homepage": "https://jdaley.github.io/gut",
   "dependencies": {
-    "gut-gk7": "^0.0.4"
+    "gut-gk7": "^0.0.5"
   }
 }
