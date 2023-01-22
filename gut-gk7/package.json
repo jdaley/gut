@@ -1,6 +1,6 @@
 {
   "name": "gut-gk7",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "GUT GK7 library",
   "main": "lib/index.js",
   "scripts": {
