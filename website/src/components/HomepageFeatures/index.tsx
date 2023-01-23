@@ -3,54 +3,56 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 
 type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
+  Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
+  content: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
+    Svg: require('@site/static/img/box.svg').default,
+    content: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <h3>Item 1</h3>
+        <h4>Blah</h4>
+        <p>
+          Blah.
+        </p>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
+    Svg: require('@site/static/img/box.svg').default,
+    content: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        <h3>Item 2</h3>
+        <h4>Blah</h4>
+        <p>
+          Blah.
+        </p>
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
+    Svg: require('@site/static/img/box.svg').default,
+    content: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <h3>Item 3</h3>
+        <h4>Blah</h4>
+        <p>
+          Blah.
+        </p>
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({Svg, content}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+      <div className="text--center padding-horiz--md">{content}</div>
     </div>
   );
 }
